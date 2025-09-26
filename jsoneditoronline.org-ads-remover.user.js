@@ -6,8 +6,8 @@
 // @author       github.com/abyss-soft
 // @grant        none
 // @include      https://jsoneditoronline.org/*
-// @updateURL    https://github.com/abyss-soft/tampermonkey/blob/main/jsoneditoronline.org-ads-remover.user.js
-// @downloadURL  https://github.com/abyss-soft/tampermonkey/blob/main/jsoneditoronline.org-ads-remover.user.js
+// @updateURL    http://raw.githubusercontent.com/abyss-soft/tampermonkey/main/jsoneditoronline.org-ads-remover.user.js
+// @downloadURL  http://raw.githubusercontent.com/abyss-soft/tampermonkey/main/jsoneditoronline.org-ads-remover.user.js
 // ==/UserScript==
 (function(){
 	'use scrict';

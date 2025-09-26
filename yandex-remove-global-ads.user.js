@@ -7,8 +7,8 @@
 // @match        https://yandex.ru/*
 // @match        http://yandex.ru/*
 // @grant        none
-// @updateURL    https://github.com/abyss-soft/tampermonkey/blob/main/yandex-remove-global-ads.user.js
-// @downloadURL  https://github.com/abyss-soft/tampermonkey/blob/main/yandex-remove-global-ads.user.js
+// @updateURL    https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/yandex-remove-global-ads.user.js
+// @downloadURL  https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/yandex-remove-global-ads.user.js
 // ==/UserScript==
 
 //Скрываются рекламные карточки и баннеры.

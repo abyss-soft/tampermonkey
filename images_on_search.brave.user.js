@@ -6,8 +6,8 @@
 // @author       github.com/abyss-soft
 // @grant        none
 // @include      https://search.brave.com/*
-// @updateURL    https://github.com/abyss-soft/tampermonkey/blob/main/images_on_search.brave.user.js
-// @downloadURL  https://github.com/abyss-soft/tampermonkey/blob/main/images_on_search.brave.user.js
+// @updateURL    https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/images_on_search.brave.user.js
+// @downloadURL  https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/images_on_search.brave.user.js
 // ==/UserScript==
 (function(){
     'use scrict';

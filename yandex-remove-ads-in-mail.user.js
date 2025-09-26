@@ -7,8 +7,8 @@
 // @match        https://mail.yandex.ru/*
 // @match        http://mail.yandex.ru/*
 // @grant        none
-// @updateURL    https://github.com/abyss-soft/tampermonkey/blob/main/yandex-remove-ad-in-mail.user.js
-// @downloadURL  https://github.com/abyss-soft/tampermonkey/blob/main/yandex-remove-ad-in-mail.user.js
+// @updateURL    https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/yandex-remove-ad-in-mail.user.js
+// @downloadURL  https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/yandex-remove-ad-in-mail.user.js
 // ==/UserScript==
 
 (function () {
