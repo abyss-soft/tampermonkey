@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Yandex_Mail remove ADS + Iframes
 // @namespace    mail-yandex-ru
-// @version      0.3
+// @version      0.4
 // @description  Remove ads and banners from yandex.ru and mail.yandex.ru
 // @author       github.com/abyss-soft
 // @match        https://mail.yandex.ru/*
