@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Yandex global remove ADS + iframes
+// @name         Yandex Global remove ADS + iframes
 // @namespace    yandex-global-remove
 // @version      1.3
 // @description  Remove advertising banners, blocks, and iframes on Yandex.ru (search, images, etc.)
@@ -50,6 +50,11 @@
         [data-name="adWrapper"] {
             display: none !important;
         }
+        
+        [id^="ImagesViewer"] {
+            display: none !important;
+        }
+
 
         /* Скрываем рекламные iframe */
         iframe[src*="yandex.ru/ads"],
