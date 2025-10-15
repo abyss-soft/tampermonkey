@@ -47,9 +47,9 @@
         }
 
         /*удалим рекламные блоки в картинках ya.ru*/
-        const elements = document.querySelectorAll('[data-name="adWrapper"]');
-        elements.forEach(el => el.style.display = 'none');
-
+        [data-name="adWrapper"] {
+            display: none !important;
+        }
 
         /* Скрываем рекламные iframe */
         iframe[src*="yandex.ru/ads"],
