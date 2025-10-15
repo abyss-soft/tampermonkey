@@ -6,6 +6,7 @@
 // @author       github.com/abyss-soft
 // @match        https://yandex.ru/*
 // @match        http://yandex.ru/*
+// @match        https://ya.ru/*
 // @grant        none
 // @updateURL    https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/yandex-remove-global-ads.user.js
 // @downloadURL  https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/yandex-remove-global-ads.user.js
