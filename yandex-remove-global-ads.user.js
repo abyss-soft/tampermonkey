@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Yandex Global remove ADS + iframes
 // @namespace    yandex-global-remove
-// @version      1.4
+// @version      1.4.1
 // @description  Remove advertising banners, blocks, and iframes on Yandex.ru (search, images, etc.)
 // @author       github.com/abyss-soft
 // @match        https://yandex.ru/*
@@ -75,7 +75,9 @@
             document.head.appendChild(style);
         }
 
-        if (window.location.hostname === "yandex.com") {
+        const myUrl = new URL(window.location.href);
+
+        if (myUrl.hostname === "yandex.com" && !myUrl.pathname) {
             // Только при старте, ищем все элементы, у которых id или class оканчивается на "__content"
             const elements = document.querySelectorAll('[id$="__content"], [class$="__content"]');
 
