@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Yandex_Mail remove ADS + Iframes
 // @namespace    mail-yandex-ru
-// @version      0.4
+// @version      0.5
 // @description  Remove ads and banners from yandex.ru and mail.yandex.ru
 // @author       github.com/abyss-soft
 // @match        https://mail.yandex.ru/*
@@ -20,7 +20,7 @@
         if(modal) {modal.style.display="none";}
 
         // Блокировка Роскомнадзора
-       document.querySelectorAll('.Warning_type_roskomnadzor').forEach(el => el.style.display="none");
+        document.querySelectorAll('.Warning_type_roskomnadzor').forEach(el => el.style.display="none");
 
         // Верхний баннер в почте
         const header = document.querySelector('#js-mail-layout-content-header');
@@ -30,8 +30,19 @@
         }
 
         // Правая колонка с рекламой в почте
-        const right = document.querySelector('div[data-testid="page-layout_right-column_container"]');
+        const right = document.querySelector('div[data-testid^="page-layout_right-column_container_"]');
         if (right) right.style.display="none";
+
+        const btn = [...document.querySelectorAll('a')]
+        .find(el => el.textContent.trim() === 'Отключить рекламу');
+
+        if (btn) {
+            const block = btn.closest('div')?.parentElement?.nextElementSibling;
+            if (block) {
+                block.style.display = 'none';
+
+            }
+        }
 
         // Удаляем рекламные iframe (RTB и пр.)
         document.querySelectorAll('iframe').forEach(frame => {
