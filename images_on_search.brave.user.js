@@ -8,6 +8,7 @@
 // @include      https://search.brave.com/*
 // @updateURL    https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/images_on_search.brave.user.js
 // @downloadURL  https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/images_on_search.brave.user.js
+// @license MIT
 // ==/UserScript==
 (function(){
     'use scrict';

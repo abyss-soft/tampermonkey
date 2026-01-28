@@ -9,6 +9,7 @@
 // @grant        GM_addStyle
 // @updateURL    https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/yandex-remove-ads-in-mail.user.js
 // @downloadURL  https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/yandex-remove-ads-in-mail.user.js
+// @license MIT
 // ==/UserScript==
 
 (function () {

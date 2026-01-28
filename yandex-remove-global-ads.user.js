@@ -12,6 +12,7 @@
 // @grant        none
 // @updateURL    https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/yandex-remove-global-ads.user.js
 // @downloadURL  https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/yandex-remove-global-ads.user.js
+// @license MIT
 // ==/UserScript==
 
 //Скрываются рекламные карточки и баннеры.
