@@ -11,8 +11,8 @@
 // @match        https://mail.yandex.com/*
 // @match        http://mail.yandex.com/*
 // @grant        GM_addStyle
-// @updateURL    https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/yandex-Mail-Remove-Ads-and-Banners.js
-// @downloadURL  https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/yandex-Mail-Remove-Ads-and-Banners.js
+// @updateURL    https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/yandex-Mail-Remove-Ads-and-Banners.user.js
+// @downloadURL  https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/yandex-Mail-Remove-Ads-and-Banners.user.js
 // @license MIT
 // ==/UserScript==
 
