@@ -2,7 +2,7 @@
 // @name         Search Engine Switcher
 // @name:ru      Переключатель поисковых систем
 // @namespace    https://github.com/abyss-soft/Search-Engine-Switcher
-// @version      1.2.0
+// @version      1.2.1
 // @description  Adds quick links to other search engines (Google, Yandex, Bing, DuckDuckGo) on search result pages
 // @description:ru Добавляет быстрые ссылки на другие поисковые системы (Яндекс, Google, Bing, DuckDuckGo) на страницах результатов поиска
 // @author       abyss-soft
@@ -10,8 +10,6 @@
 // @icon         https://www.google.com/favicon.ico
 // @homepageURL  https://github.com/abyss-soft/Search-Engine-Switcher
 // @supportURL   https://github.com/abyss-soft/Search-Engine-Switcher/issues
-// @updateURL    https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/Search-Engine-Switcher.user.js
-// @downloadURL  https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/Search-Engine-Switcher.user.js
 // @match        https://www.google.ru/*
 // @match        https://www.google.com/*
 // @match        https://yandex.ru/*
@@ -23,6 +21,8 @@
 // @grant        none
 // @run-at       document-end
 // @noframes
+// @downloadURL https://update.greasyfork.org/scripts/564918/Search%20Engine%20Switcher.user.js
+// @updateURL https://update.greasyfork.org/scripts/564918/Search%20Engine%20Switcher.meta.js
 // ==/UserScript==
 
 (function () {
@@ -91,6 +91,7 @@
             link.href = engine.url;
             link.textContent = engine.name;
             link.setAttribute('data-custom-search-link', 'true');
+            link.setAttribute('target', '_blank');
             link.style.cssText = `
                 color: #5f6368;
                 text-decoration: none;
@@ -166,11 +167,11 @@
             margin-left: 8px;
         `;
         newLinksContainer.innerHTML = `
-            <a href="https://yandex.ru/search/?text=${encodeURIComponent(searchTerm)}" style="color: #5f6368; text-decoration: none; font-size: 14px; line-height: 1.3; font-family: Arial, sans-serif;">Яндекс</a>
+            <a href="https://yandex.ru/search/?text=${encodeURIComponent(searchTerm)}" style="color: #5f6368; text-decoration: none; font-size: 14px; line-height: 1.3; font-family: Arial, sans-serif;" target="_blank">Яндекс</a>
             <span style="color: #5f6368; margin: 0 3px; line-height: 1.3; font-family: Arial, sans-serif;">|</span>
-            <a href="https://www.bing.com/search?q=${encodeURIComponent(searchTerm)}" style="color: #5f6368; text-decoration: none; font-size: 14px; line-height: 1.3; font-family: Arial, sans-serif;">Bing</a>
+            <a href="https://www.bing.com/search?q=${encodeURIComponent(searchTerm)}" style="color: #5f6368; text-decoration: none; font-size: 14px; line-height: 1.3; font-family: Arial, sans-serif;" target="_blank">Bing</a>
             <span style="color: #5f6368; margin: 0 3px; line-height: 1.3; font-family: Arial, sans-serif;">|</span>
-            <a href="https://duckduckgo.com/?q=${encodeURIComponent(searchTerm)}" style="color: #5f6368; text-decoration: none; font-size: 14px; line-height: 1.3; font-family: Arial, sans-serif;">DuckDuckGo</a>
+            <a href="https://duckduckgo.com/?q=${encodeURIComponent(searchTerm)}" style="color: #5f6368; text-decoration: none; font-size: 14px; line-height: 1.3; font-family: Arial, sans-serif;" target="_blank">DuckDuckGo</a>
         `;
 
         // Добавляем обработчики наведения
@@ -240,9 +241,9 @@
         `;
         newLinksContainer.innerHTML = `
             <span style="color: #717171; font-weight: 500;">Другие поисковики:</span>
-            <a href="https://yandex.ru/search/?text=${encodeURIComponent(searchTerm)}" style="color: #717171; text-decoration: none;">Яндекс</a>
-            <a href="https://www.google.com/search?q=${encodeURIComponent(searchTerm)}" style="color: #717171; text-decoration: none;">Google</a>
-            <a href="https://www.bing.com/search?q=${encodeURIComponent(searchTerm)}" style="color: #717171; text-decoration: none;">Bing</a>
+            <a href="https://yandex.ru/search/?text=${encodeURIComponent(searchTerm)}" style="color: #717171; text-decoration: none;" target="_blank">Яндекс</a>
+            <a href="https://www.google.com/search?q=${encodeURIComponent(searchTerm)}" style="color: #717171; text-decoration: none;" target="_blank">Google</a>
+            <a href="https://www.bing.com/search?q=${encodeURIComponent(searchTerm)}" style="color: #717171; text-decoration: none;" target="_blank">Bing</a>
         `;
 
         // Добавляем обработчики наведения
