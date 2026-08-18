@@ -3,7 +3,7 @@
 // @name:ru      Яндекс Почта - Удаление рекламы
 // @name:en      Yandex Mail - Remove Ads & Iframes
 // @namespace    https://github.com/abyss-soft/yandex-Mail-Remove-Ads-and-Banners
-// @version      1.3
+// @version      1.4
 // @description  Удаляет рекламу и баннеры с Yandex Mail (поддерживает SPA, легковесный)
 // @description:en Removes ads, banners and iframe ads from Yandex Mail (SPA-friendly, lightweight)
 // @author       github.com/abyss-soft
@@ -24,6 +24,10 @@
   const css = `
    /* Правая колонка */
     div[data-testid^="page-layout_right-column_"] {
+      display: none !important;
+    }
+
+    [data-testid="layout-main"] ~ * {
       display: none !important;
     }
 
