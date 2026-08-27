@@ -3,7 +3,7 @@
 // @name:ru      Яндекс - Удаление рекламы и баннеров
 // @name:en      Yandex - Remove Ads & Iframes Everywhere
 // @namespace    https://github.com/abyss-soft/Yandex-Remove-Ads-and-Banners-Everywhere
-// @version      1.7.1
+// @version      1.7.2
 // @description  Удаляет рекламные баннеры, блоки и iframe на всех страницах Яндекса
 // @description:en Removes advertising banners, blocks and iframes on Yandex (SPA-friendly)
 // @author       github.com/abyss-soft
@@ -12,6 +12,7 @@
 // @match        http://yandex.com/*
 // @match        http://yandex.ru/*
 // @match        https://ya.ru/*
+// @exclude      *://*.yandex.ru/maps*
 // @grant        none
 // @updateURL    https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/Yandex-Remove-Ads-and-Banners-Everywhere.user.js
 // @downloadURL  https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/Yandex-Remove-Ads-and-Banners-Everywhere.user.js
