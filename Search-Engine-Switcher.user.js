@@ -2,14 +2,14 @@
 // @name         Search Engine Switcher
 // @name:ru      Переключатель поисковых систем
 // @namespace    https://github.com/abyss-soft/Search-Engine-Switcher
-// @version      1.3.0
+// @version      1.3.1
 // @description  Adds quick links to other search engines (Google, Yandex, Bing, DuckDuckGo) on search result pages
 // @description:ru Добавляет быстрые ссылки на другие поисковые системы (Яндекс, Google, Bing, DuckDuckGo) на страницах результатов поиска
 // @author       abyss-soft
 // @license      MIT
 // @icon         https://www.google.com/favicon.ico
-// @homepageURL  https://github.com/abyss-soft/Search-Engine-Switcher
-// @supportURL   https://github.com/abyss-soft/Search-Engine-Switcher/issues
+// @homepageURL  https://github.com/abyss-soft/tampermonkey
+// @supportURL   https://github.com/abyss-soft/tampermonkey/issues
 // @match        https://www.google.ru/*
 // @match        https://www.google.com/*
 // @match        https://yandex.ru/*
