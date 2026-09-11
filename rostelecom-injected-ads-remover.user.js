@@ -6,8 +6,8 @@
 // @author       github.com/abyss-soft
 // @match        http://*/*
 // @grant        none
-// @updateURL    https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/rostelecom-ads-remover.user.js
-// @downloadURL  https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/rostelecom-ads-remover.user.js
+// @updateURL    https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/rostelecom-injected-ads-remover.user.js
+// @downloadURL  https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/rostelecom-injected-ads-remover.user.js
 // ==/UserScript==
 (function () {
     'use strict';
