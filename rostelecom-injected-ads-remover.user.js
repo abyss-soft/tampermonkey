@@ -2,13 +2,15 @@
 // @name         Rostelecom Injected Ads Remover
 // @name:en      Rostelecom Injected Ads Remover
 // @namespace    Rostelecom-AD-remover
-// @version      0.3
+// @version      0.3.1
 // @description  Removes ads injected by Rostelecom on HTTP websites
 // @description:en Removes ads injected by Rostelecom on HTTP websites
 // @description:ru Удаляет рекламу, внедряемую Ростелекомом на HTTP-сайтах
 // @author       github.com/abyss-soft
 // @match        http://*/*
 // @grant        none
+// @homepageURL  https://github.com/abyss-soft/tampermonkey
+// @supportURL   https://github.com/abyss-soft/tampermonkey/issues
 // @updateURL    https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/rostelecom-injected-ads-remover.user.js
 // @downloadURL  https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/rostelecom-injected-ads-remover.user.js
 // @license MIT
