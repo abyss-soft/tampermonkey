@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Dzen Ad Killer
-// @name:ru      Удаляет рекламу и соцрекламу на dzen.ru и sportsdzen.ru
+// @name:ru      Удаляет рекламу на dzen.ru и sportsdzen.ru
 // @name:en      Dzen Ad Killer
 // @namespace    https://github.com/abyss-soft/yandex-Dzen-Remove-Ads-and-Banners
 // @version      1.0
