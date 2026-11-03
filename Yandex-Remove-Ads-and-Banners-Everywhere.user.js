@@ -12,6 +12,7 @@
 // @match        http://yandex.com/*
 // @match        http://yandex.ru/*
 // @match        https://ya.ru/*
+// @match        https://translate.yandex.ru/*
 // @exclude      https://yandex.*/maps*
 // @grant        none
 // @updateURL    https://raw.githubusercontent.com/abyss-soft/tampermonkey/main/Yandex-Remove-Ads-and-Banners-Everywhere.user.js
@@ -41,7 +42,13 @@
 
   /* Правая колонка */
   .main__right .composite,
-  .main__right .Card {
+  .main__right .Card,
+  .Root div[class*=Slot] {
+    display: none !important;
+  }
+
+  /* Правая колонка (translate) */
+  .side-block > div > div {
     display: none !important;
   }
 
